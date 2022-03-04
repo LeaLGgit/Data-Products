@@ -15,13 +15,13 @@ library(ggplot2)
 data(diamonds)
 
 
-# Define UI for application that draws a histogram
+# Define UI for application
 shinyUI(fluidPage(
 
     # Application title
     titlePanel("Values of diamonds"),
 
-    # Sidebar with a slider input for number of bins
+    # Sidebar with a slider input and drop down options
     sidebarLayout(
         sidebarPanel(
              h6("Explore prices of diamonds.") ,
@@ -39,7 +39,7 @@ shinyUI(fluidPage(
             
           ),
 
-        # Show a plot of the generated distribution
+        # Show a plot of the generated distribution and some text
         mainPanel(
             h2("Features of diamonds set the prices."),
             h6("Play around with the kind of cut and carat to see different price effects and perhaps an interplay between both. Do you think another feature might play an important role?"),
